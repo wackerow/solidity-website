@@ -2,7 +2,7 @@ import { LATEST_SOLIDITY_RELEASE_URL } from '../constants'
 
 export const fetchLatestVersion = async () => {
   const headers = new Headers({
-    Authorization: 'Token ' + process.env.GH_TOKEN_READ_ONLY,
+    Authorization: 'Token ' + process.env.GITHUB_TOKEN_READ_ONLY,
   })
   try {
     const response = await fetch(LATEST_SOLIDITY_RELEASE_URL, { headers })
