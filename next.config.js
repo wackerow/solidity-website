@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'standalone',
   experimental: { esmExternals: true },
-  basePath: '/solidity-website',
+  // basePath: '/solidity-website',
   images: { unoptimized: true },
 }
 
