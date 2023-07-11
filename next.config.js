@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'standalone',
+  output: 'export',
   experimental: { esmExternals: true },
-  images: {
-    unoptimized: true,
-  },
+  basePath: 'solidity-website',
+  images: { unoptimized: true },
 }
 
 const removeImports = require('next-remove-imports')()
