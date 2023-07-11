@@ -4,7 +4,7 @@ const nextConfig = {
   output: 'standalone',
   experimental: { esmExternals: true },
   images: { unoptimized: true },
-  basePath: '/',
+  basePath: '',
 }
 
 const removeImports = require('next-remove-imports')()
