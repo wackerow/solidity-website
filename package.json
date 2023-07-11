@@ -7,15 +7,12 @@
   "private": false,
   "scripts": {
     "dev": "next dev",
-    "predeploy": "npm run build",
     "build": "yarn lint && yarn format && npx next build && yarn export",
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "export": "next export -o build && npm run replaceFilePaths",
-    "replaceFilePaths": "node replacer.js",
-    "deploy": "gh-pages -d build"
+    "export": "next export -o build"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.17",
