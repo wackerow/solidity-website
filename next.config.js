@@ -6,6 +6,7 @@ const nextConfig = {
   images: { unoptimized: true },
   basePath: '/solidity-website',
   assetPrefix: '/solidity-website/',
+  images: { path: '/solidity-website/' },
 }
 
 const removeImports = require('next-remove-imports')()
