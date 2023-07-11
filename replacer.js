@@ -1,6 +1,6 @@
 const replace = require('replace-in-file')
 const options = {
-  files: './build/index.html',
+  files: './build/*.html',
   from: [/src="\//g, /href="\//g],
   to: ['src="./', 'href="./'],
 }
