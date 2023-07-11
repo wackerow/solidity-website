@@ -2,7 +2,7 @@ const replace = require('replace-in-file')
 const options = {
   files: './out/*.html',
   from: [/src="\//g, /href="\//g],
-  to: ['src="./', 'href="./'],
+  to: ['src="/solidity-website/', 'href="/solidity-website/'],
 }
 ;(async function () {
   try {
