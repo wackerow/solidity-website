@@ -27,8 +27,9 @@ const ResultTextarea: React.FC<TextareaProps> = (props) => (
     p={2}
     minH={{ base: '200px', md: 'unset' }}
     borderRadius="none"
-    {...props}
     borderWidth="2px"
+    borderColor="border"
+    {...props}
   />
 )
 interface CompilerResult {
@@ -169,6 +170,7 @@ export const CompilerPlayground: React.FC<FlexProps> = (props) => {
           flex={1}
           maxW="100%"
           textOverflow="ellipsis"
+          sx={{ p: { mb: 0 } }}
         >
           <Text fontWeight="bold" fontSize="lg">
             Compiler result

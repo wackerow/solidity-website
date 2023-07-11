@@ -1,4 +1,9 @@
-import { BlogPostPreview, ButtonLink, Section } from '@/components'
+import {
+  BlogCategories,
+  BlogPostPreview,
+  ButtonLink,
+  Section,
+} from '@/components'
 import type { BlogProps } from '@/interfaces'
 import { BLOG_PATH, BLOG_PAGE_PATH } from '@/constants'
 import { Flex, Grid, Icon, Text } from '@chakra-ui/react'
@@ -17,9 +22,12 @@ export const BlogPostListSection: React.FC<BlogProps> = ({
     fontSize="md"
     mx="auto"
   >
+    <BlogCategories />
     <Grid
       templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }}
-      columnGap={16} /* rowGap={24} */
+      columnGap={16}
+      borderTop="1px"
+      borderColor="primary"
     >
       {allPostsData.map(({ frontmatter, content, url }, i) => {
         const isFeatured = page === 1 && i === 0
@@ -30,8 +38,6 @@ export const BlogPostListSection: React.FC<BlogProps> = ({
             content={content}
             url={url}
             isFeatured={isFeatured}
-            borderBottom={isFeatured ? '1px solid' : 'none'}
-            borderColor="primary"
             gridColumn={{
               base: 'span 1',
               md: isFeatured ? 'span 2' : 'span 1',
