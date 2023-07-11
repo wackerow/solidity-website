@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "predeploy": "npm run build",
-    "build": "yarn lint && yarn format && npx next build && next export -o build && npm run replaceFilePaths",
+    "build": "yarn lint && yarn format && npx next build && yarn export",
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
