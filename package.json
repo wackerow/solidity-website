@@ -12,7 +12,7 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "export": "next export"
+    "export": "next export -o docs"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.17",
