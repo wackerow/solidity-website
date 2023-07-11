@@ -5,7 +5,7 @@ const nextConfig = {
   experimental: { esmExternals: true },
   images: { unoptimized: true },
   basePath: '/solidity-website',
-  // assetPrefix: '/solidity-website/',
+  assetPrefix: '/solidity-website/',
   images: { path: '/solidity-website/' },
 }
 
