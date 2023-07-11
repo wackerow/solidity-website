@@ -7,7 +7,7 @@
   "private": false,
   "scripts": {
     "dev": "next dev",
-    "build": "yarn lint && yarn format && npx next build",
+    "build": "yarn lint && yarn format && npx next build && yarn export",
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
